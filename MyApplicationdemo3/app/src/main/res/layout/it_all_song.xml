@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/item_back_ground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:padding="3dp"
+        android:src="@mipmap/image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/iv_context_menu"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/tv_song_name"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Hãy yêu anh lần nữa" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_marginBottom="3dp"
+            android:text="Hãy yêu anh lần nữa" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_context_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="15dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/context_icon" />
+</RelativeLayout>

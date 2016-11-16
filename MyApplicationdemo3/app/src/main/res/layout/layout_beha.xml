@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottom_behavior"
+    app:behavior_hideable="false"
+    android:background="#ffffff"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    >
+    <!--bottom to top-->
+    <RelativeLayout
+        android:id="@+id/ll_control_music"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_title__layout_beha"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <include layout="@layout/layout_control_music" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ll_control_music_1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="@dimen/icon_title__layout_beha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_control_music">
+        <ImageView
+            android:background="@mipmap/image"
+            android:layout_above="@+id/ll_repeat"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/icon_title__layout_beha"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/ll_repeat"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/tv_song_name"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <include layout="@layout/layout_repeat"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_song_name"
+            android:text="I love you"
+            android:layout_above="@+id/sb_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:id="@+id/sb_seek_bar"
+            android:layout_above="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_time_left"
+                android:text="12:09"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_time_right"
+                android:text="82:09"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--Top to bottom-->
+    <ProgressBar
+        android:id="@+id/pb_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:background="@drawable/custom_progress_bar"
+        android:visibility="invisible"
+        android:layout_height="@dimen/progress_bar_size" />
+    <ImageView
+        android:id="@+id/iv_title"
+        android:background="@mipmap/image"
+        android:layout_below="@+id/pb_progress_bar"
+        android:adjustViewBounds="true"
+        android:layout_margin="@dimen/icon_title_margin"
+        android:layout_width="@dimen/icon_title__layout_beha"
+        android:visibility="invisible"
+        android:layout_height="@dimen/icon_title__layout_beha" />
+</RelativeLayout>

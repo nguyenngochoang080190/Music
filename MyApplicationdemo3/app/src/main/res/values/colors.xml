@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9916ee</color>
+    <color name="colorPrimaryDark">#9916ee</color>
+    <color name="colorAccent">#2fd010</color>
+    <color name="startColor">#FFA73CEC</color>
+    <color name="endColor">#FFA73CEC</color>
+    <color name="progressBackgroundColor">#d4d1d1</color>
+    <color name="item_navigationview_color">#333333</color>
+    <color name="colorItem">#ffffff</color>
+    <color name="colorBackGround">#cc54f1</color>
+    <color name="colorc">#ef4f9f</color>
+</resources>

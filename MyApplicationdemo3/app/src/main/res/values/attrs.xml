@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PieChart">
+        <attr name="showText" format="boolean" />
+        <attr name="text" format="string" />
+        <attr name="labelPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="myCustom">
+        <attr name="inText" format="string" />
+        <attr name="nomalColor" format="color" />
+        <attr name="pressColor" format="color" />
+        <attr name="strokeWidth" format="integer" />
+        <attr name="outColor" format="color" />
+        <attr name="alpha_" format="integer" />
+        <attr name="src" format="integer"/>
+        <attr name="padding" format="integer"/>
+    </declare-styleable>
+</resources>

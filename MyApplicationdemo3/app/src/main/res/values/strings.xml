@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="library_title" >Thư viện nhạc</string>
+    <string name="tool_title" >Công cụ</string>
+    <string name="item_exit">Thoát</string>
+    <string name="item_library">Thư viện nhạc</string>
+    <string name="item_your_album">Album tự tạo</string>
+    <string name="item_song_favorite">Bài hát yêu thích</string>
+    <string name="item_folder">Thư mục</string>
+    <string name="item_setting">Cài đặt</string>
+    <string name="item_support">Hỗ trợ</string>
+    <string name="add_favorite">Thêm vào yêu thích</string>
+    <string name="add_album">Thêm vào album</string>
+    <string name="quanlity">Số bài:</string>
+    <string name="set_rington">Đặt làm nhạc chuông</string>
+    <string name="create_new_album">Tạo mới album</string>
+    <string name="put_album_name">Tên album</string>
+    <string name="obt_ok">Chấp nhận</string>
+    <string name="obt_cancle">Hủy bỏ</string>
+    <string name="sort">Sắp xếp</string>
+    <string name="time_up">Mới nhất</string>
+    <string name="time_down">Cũ nhất</string>
+    <string name="views">Lượt nghe</string>
+    <string name="delete">Xóa album</string>
+    <array name="tabLayoutTitle">
+        <item>Tất cả bài hát</item>
+        <item>Albums</item>
+        <item>Nghệ sĩ</item>
+        <item>Khác</item>
+    </array>
+</resources>

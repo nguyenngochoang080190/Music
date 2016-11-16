@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Custom layout_control_music -->
+    <dimen name="layout_control_music__control_margin">10dp</dimen>
+    <dimen name="layout_control_music_padding">5dp</dimen>
+    <dimen name="layout_control_music__control_normal_size">40dp</dimen>
+    <dimen name="layout_control_music__control_mini_size">25dp</dimen>
+    <dimen name="progress_bar_size">2dp</dimen>
+    <dimen name="icon_title__layout_beha">50dp</dimen>
+    <dimen name="icon_title_margin" >1dp</dimen>
+</resources>

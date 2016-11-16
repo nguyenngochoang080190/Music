@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_add_favorite"
+        android:title="@string/add_favorite" />
+    <item
+        android:id="@+id/item_set_rington"
+        android:title="@string/set_rington" />
+    <item
+        android:id="@+id/item_add_album"
+        android:title="@string/add_album" >
+        <menu>
+            <group>
+                <item android:title="chuc năng 1"/>
+                <item android:title="chuc năng 1"/>
+                <item android:title="chuc năng 1"/>
+            </group>
+        </menu>
+    </item>
+</menu>

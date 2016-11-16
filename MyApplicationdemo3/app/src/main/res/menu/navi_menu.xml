@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="@string/library_title">
+    <menu>
+        <group android:checkableBehavior="single">
+            <item android:title="@string/item_library"
+                android:id="@+id/item_library"
+                android:icon="@mipmap/library_icon"
+                />
+            <item android:title="@string/item_your_album"
+                android:id="@+id/item_your_album"
+                android:icon="@mipmap/album_icon"
+                />
+            <item android:title="@string/item_folder"
+                android:id="@+id/item_folder"
+                android:icon="@mipmap/favorite_icon"
+                />
+        </group>
+    </menu>
+</item><item android:title="@string/tool_title">
+    <menu>
+        <group android:checkableBehavior="single">
+            <item android:title="@string/item_setting" android:id="@+id/item_setting"
+                android:icon="@mipmap/setting_icon"
+                />
+            <item android:title="@string/item_support" android:id="@+id/item_support"/>
+        </group>
+    </menu>
+</item>
+<item android:title="@string/item_exit"
+    android:id="@+id/item_exit"
+    />
+</menu>
