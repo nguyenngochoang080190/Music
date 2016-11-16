@@ -22,6 +22,9 @@
     <string name="time_down">Cũ nhất</string>
     <string name="views">Lượt nghe</string>
     <string name="delete">Xóa album</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="update">Cập nhật</string>
+    <string name="add_new_album">Thêm mới album</string>
     <array name="tabLayoutTitle">
         <item>Tất cả bài hát</item>
         <item>Albums</item>

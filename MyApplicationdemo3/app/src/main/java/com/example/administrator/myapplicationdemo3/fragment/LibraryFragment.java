@@ -49,17 +49,21 @@ public class LibraryFragment extends Fragment implements View.OnClickListener {
     public void onCreate(Bundle bundle)
     {
         super.onCreate(bundle);
+        setHasOptionsMenu(true);
     }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        ///
+        inflater.inflate(R.menu.main_menu,menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()==R.id.action_update)
+        {
 
+        }
         return super.onOptionsItemSelected(item);
     }
 }

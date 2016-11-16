@@ -1,18 +1,14 @@
 package com.example.administrator.myapplicationdemo3.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.administrator.myapplicationdemo3.R;
 import com.example.administrator.myapplicationdemo3.adapter.RecyclerViewAdapter;
@@ -28,14 +24,17 @@ import java.util.ArrayList;
  */
 
 public class AllSongFragment extends Fragment {
+    public static String TAG=AllSongFragment.class.getSimpleName();
     RecyclerView mRecyclerView;
     static ArrayList<Song> mSongs;
     ManagerAllSongs mManagerAllSongs;
     static AllSongFragment mAllSongFragment = new AllSongFragment();
     RecyclerViewAdapter mRecyclerViewAdapter;
-
-    public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
+    Intent mIntent;
+    public static String POSITION="position";
+    public View onCreateView(final LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
         View contentView = inflater.inflate(R.layout.all_song_fragment_layout, viewGroup, false);
+        mIntent=new Intent(TAG);
         mManagerAllSongs = new ManagerAllSongs(getContext());
         mManagerAllSongs.openManagerAllSongs();
         mSongs = mManagerAllSongs.getArrayListSongs(ManagerAllSongs.GET_ALL);
@@ -52,6 +51,8 @@ public class AllSongFragment extends Fragment {
         mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getContext(), mRecyclerView, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(View view, int position, MotionEvent e) {
+                mIntent.putExtra(POSITION,position);
+                getContext().sendBroadcast(mIntent);
             }
 
             @Override
